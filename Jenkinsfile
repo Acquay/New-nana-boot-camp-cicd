@@ -5,6 +5,7 @@ pipeline {
             steps {
                 script {
                     echo "Testing the application...."
+                    echo "Sending message about app test"
                 }
             }
         }
