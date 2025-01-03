@@ -28,12 +28,6 @@ pipeline {
         
         
         stage("build jar") {
-            when {
-                expression {
-                    BRANCH_NAME == "jenkins-jobs"
-                }
-
-            }
             steps {
                 script {
                     buildJar()
@@ -50,11 +44,6 @@ pipeline {
         }
 
         stage("deploy App") {
-            when {
-                expression {
-                    BRANCH_NAME == "jenkins-jobs"
-                }
-            }
             steps {
                 script {
                     gv.deployApp()
