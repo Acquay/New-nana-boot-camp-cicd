@@ -4,8 +4,8 @@ pipeline {
         stage("test") {
             steps {
                 script {
-                    echo "Testing the application...."
-                    echo "Sending message about app test"
+                    echo "Testing the application success before integration"
+                    
                 }
             }
         }
