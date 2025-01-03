@@ -30,7 +30,7 @@ pipeline {
         stage("build jar") {
             when {
                 expression {
-                    BRANCH_NAME == "master"
+                    BRANCH_NAME == "jenkins-jobs"
                 }
 
             }
@@ -52,7 +52,7 @@ pipeline {
         stage("deploy App") {
             when {
                 expression {
-                    BRANCH_NAME == "master"
+                    BRANCH_NAME == "jenkins-jobs"
                 }
             }
             steps {
